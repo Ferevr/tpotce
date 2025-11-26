@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'; object-src 'none'">
     <!--Setup Font Awesome-->
     <link href="assets/fonts/awesome/css/all.css" rel="stylesheet">
     <!--Setup Particles, Particles Conf, Clock-->
     <!-- Check integrity: openssl dgst -sha384 -binary your.file.name | openssl base64 -A-->
-    <script src="assets/js/particles.min.js" defer></script>
-    <script src="assets/js/particles_conf.js" defer></script>
-    <script src="assets/js/clock.js" defer></script>
+    <script src="assets/js/particles.min.js" defer crossorigin="anonymous"></script>
+    <script src="assets/js/particles_conf.js" defer crossorigin="anonymous"></script>
+    <script src="assets/js/clock.js" defer crossorigin="anonymous"></script>
 
     <title>Acces-Pot</title>
     <style>
