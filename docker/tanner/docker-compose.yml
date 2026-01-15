@@ -112,6 +112,6 @@ services:
      - tanner_local
     ports:
      - "80:80"
-    image: "dtagdevsec/snare:24.04"
+    image: "ghcr.io/ferevr/snare:24.04"
     depends_on:
      - tanner
