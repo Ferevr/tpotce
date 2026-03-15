@@ -32,6 +32,9 @@ RUN apk --no-cache -U upgrade && \
     rm -rf /opt/snare && \
     mkdir -p /opt/snare/pages && \
     mv /root/dist/pages/* /opt/snare/pages/ && \
+    mkdir -p /opt/snare/certs && \
+    mv /root/dist/snare.crt /opt/snare/certs/ && \
+    mv /root/dist/snare.key /opt/snare/certs/ && \
 #
 # Setup configs, user, groups
     addgroup -g 2000 snare && \
@@ -51,4 +54,4 @@ RUN apk --no-cache -U upgrade && \
 # Start snare
 STOPSIGNAL SIGKILL
 USER snare:snare
-CMD snare --tanner tanner --debug true --auto-update false --host-ip 0.0.0.0 --port 443 --page-dir acces --tls-enabled true --tls-cert-file /root/dist/snare.crt --tls-key-file /root/dist/snare.key
+CMD snare --tanner tanner --debug true --auto-update false --host-ip 0.0.0.0 --port 8443 --page-dir acces --tls-enabled true --tls-cert-file /opt/snare/certs/snare.crt --tls-key-file /opt/snare/certs/snare.key
