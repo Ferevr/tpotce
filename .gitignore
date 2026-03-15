@@ -4,3 +4,5 @@ _data/
 **/.DS_Store
 .idea
 install_tpot.log
+*.crt
+*.key
