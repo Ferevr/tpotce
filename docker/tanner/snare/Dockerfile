@@ -22,9 +22,9 @@ RUN apk --no-cache -U upgrade && \
 		py3-wheel && \
 #
 # Setup Snare 
-    git clone https://github.com/mushorg/snare /opt/snare && \
+    git clone https://github.com/Ferevr/snare /opt/snare && \
     cd /opt/snare/ && \
-	git checkout 08c69b7165354ea2040b6170c37d92ff3c304f96 && \
+	#git checkout 08c69b7165354ea2040b6170c37d92ff3c304f96 && \
     cp /root/dist/requirements.txt . && \
     pip3 install --break-system-packages --no-cache-dir -r requirements.txt && \
     python3 setup.py install && \
@@ -51,4 +51,4 @@ RUN apk --no-cache -U upgrade && \
 # Start snare
 STOPSIGNAL SIGKILL
 USER snare:snare
-CMD snare --tanner tanner --debug true --auto-update false --host-ip 0.0.0.0 --port 80 --page-dir acces
+CMD snare --tanner tanner --debug true --auto-update false --host-ip 0.0.0.0 --port 443 --page-dir acces --tls-enabled true --tls-cert-file /root/dist/snare.crt --tls-key-file /root/dist/snare.key
