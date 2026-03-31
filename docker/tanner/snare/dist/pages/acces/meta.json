@@ -117,5 +117,16 @@
                 "Strict-Transport-Security": "max-age=64072000; includeSubDomains; preload"
             }
         ]
+    },
+    "/snare-submit": {
+        "hash": "freebeberbe",
+        "headers": [
+            {
+                "Server": "SimpleHTTP/0.6 Python/3.13.12"
+            },
+            {
+                "Content-type": "application/json"
+            }
+        ]
     }
 }

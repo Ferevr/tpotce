@@ -6,3 +6,8 @@ _data/
 install_tpot.log
 *.crt
 *.key
+
+#ignore custom pages added for snare
+docker/tanner/snare/dist/pages/acces/*
+docker/tanner/snare/dist/pages/AccesFull/*
+docker/tanner/snare/dist/pages/custom/*
