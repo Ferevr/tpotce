@@ -8,6 +8,7 @@ Options:
   -s                Suppress installation confirmation prompt (sets myQST=y)
   -t <type>         Type of installation (required if -s is used):
                       h - hive      (requires -u and -p)
+                      c - configurable
                       s - sensor    (no user/pass required)
                       l - llm       (requires -u and -p)
                       i - mini      (requires -u and -p)
@@ -237,7 +238,7 @@ fi
 if [ ! -f installer/install/tpot.yml ] && [ ! -f tpot.yml ];
   then
     echo "### Now downloading T-Pot Ansible Installation Playbook ... "
-    wget -qO tpot.yml https://raw.githubusercontent.com/telekom-security/tpotce/master/installer/install/tpot.yml
+    wget -qO tpot.yml https://raw.githubusercontent.com/Ferevr/tpotce/master/installer/install/tpot.yml
     myANSIBLE_TPOT_PLAYBOOK="tpot.yml"
     echo
   else
@@ -293,6 +294,8 @@ echo
 echo "### Choose your T-Pot type:"
 echo "### (H)ive   - T-Pot Standard / HIVE installation."
 echo "###            Includes also everything you need for a distributed setup with sensors."
+echo "### (C)onfigurable - T-Pot Configurable installation."
+echo "###            Choose from a variety of honeypots and services to run your own custom T-Pot setup."
 echo "### (S)ensor - T-Pot Sensor installation."
 echo "###            Optimized for a distributed installation, without WebUI, Elasticsearch and Kibana."
 echo "### (L)LM    - T-Pot LLM installation."
@@ -319,6 +322,13 @@ while true; do
       cp ${HOME}/tpotce/compose/standard.yml ${HOME}/tpotce/docker-compose.yml
       myINFO=""
       break ;;
+    c|C)
+      echo
+      echo "### Installing T-Pot Configurable."
+      myTPOT_TYPE="HIVE"
+      cp ${HOME}/tpotce/compose/standard-minimal.yml ${HOME}/tpotce/docker-compose.yml
+      myINFO="### Make sure to adjust the T-Pot config file (.env) for your custom setup."
+      break ;;  
     s|S)
       echo
       echo "### Installing T-Pot Sensor."

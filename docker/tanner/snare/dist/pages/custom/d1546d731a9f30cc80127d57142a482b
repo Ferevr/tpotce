@@ -1,0 +1,489 @@
+<!-- Note :    - You can modify the font style and form style to suit your website.    - Code lines with comments Do not remove this code are required for the form to work properly, make sure that you do not remove fdefethese lines of code.    - The Mandatory check script can modified as to suit your business needs.    - It is important that you test the modified form before going live.-->
+<div class="zcwf_lblLeft crmWebToEntityForm" id="crmWebToEntityForm" style="background-color: white;color: black;max-width: 600px;">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="text/html;charset=utf-8" http-equiv="content-type"/>
+<script async="" defer="" src="/recaptcha/api.js"> </script>
+<script src="/ajax/libs/jquery/3.6.4/jquery.min.js"> </script>
+<style>
+		.wf_customMessageBox {
+			font-family: Arial, Helvetica, sans-serif;
+			color: #132C14;
+			background: #F5FAF5;
+			box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+			max-width: 90%;
+			width: max-content;
+			word-break: break-word;
+			z-index: 11000;
+			border-radius: 6px;
+			border: 1px solid #A9D3AB;
+			min-width: 100px;
+			padding: 10px 15px;
+			display: flex;
+			align-items: center;
+			position: fixed;
+			top: 20px;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+
+		.wf_customCircle {
+			position: relative;
+			background-color: #12AA67;
+			border-radius: 100%;
+			width: 20px;
+			height: 20px;
+			flex: none;
+			margin-right: 7px;
+		}
+
+		.wf_customCheckMark {
+			box-sizing: unset !important;
+			position: absolute;
+			transform: rotate(45deg)translate(-50%, -50%);
+			left: 6px;
+			top: 9px;
+			height: 8px;
+			width: 3px;
+			border-bottom: 2px solid #fff;
+			border-right: 2px solid #fff;
+		}
+
+		.wf_customClose {
+			box-sizing: border-box;
+			position: relative;
+			width: 18px;
+			height: 18px;
+		}
+
+		.wf_customClose::after,
+		.wf_customClose::before {
+			content: '';
+			display: block;
+			box-sizing: border-box;
+			position: absolute;
+			width: 12px;
+			height: 1.5px;
+			background: #616E88;
+			transform: rotate(45deg);
+			border-radius: 5px;
+			top: 8px;
+			left
+		}
+
+		.wf_customClose::after {
+			transform: rotate(-45deg)
+		}
+	</style>
+<div class="wf_customMessageBox" id="wf_splash" style="display:none">
+<div class="wf_customCircle">
+<div class="wf_customCheckMark"> </div>
+</div> <span id="wf_splash_info"> </span> </div></div>
+
+<form accept-charset="UTF-8" id="webform6479890000000539062" name="WebToLeads6479890000000539062"> <input name="xnQsjsdp" style="display:none;" type="text" value="92a85c43ed09b274fcc5fad2c4e8d07646f63e232a4905f9d276193f5ead9956"/> <input id="zc_gad" name="zc_gad" type="hidden" value=""/> <input name="xmIwtLD" style="display:none;" type="text" value="63ead330181bce9fdd982355fb1e77d766e044ed830deb53a941956f40b8bf730b2ddae05999eab48b53f04b1598081f"/>
+<input name="actionType" style="display:none;" type="text" value="TGVhZHM="/> <input name="returnURL" style="display:none;" type="text" value="null"/> <!-- Do not remove this code. -->
+<style>
+			html,
+			body {
+				margin: 0px;
+			}
+
+			.formsubmit.zcwf_button {
+				color: white !important;
+				background: transparent linear-gradient(0deg, #0279FF 0%, #00A3F3 100%);
+			}
+
+			#crmWebToEntityForm.zcwf_lblLeft {
+				width: 100%;
+				padding: 25px;
+				margin: 0 auto;
+				box-sizing: border-box;
+			}
+
+			#crmWebToEntityForm.zcwf_lblLeft * {
+				box-sizing: border-box;
+			}
+
+			#crmWebToEntityForm {
+				text-align: left;
+			}
+
+			#crmWebToEntityForm * {
+				direction: ltr;
+			}
+
+			.zcwf_lblLeft .zcwf_title {
+				word-wrap: break-word;
+				padding: 0px 6px 10px;
+				font-weight: bold
+			}
+
+			.zcwf_lblLeft.cpT_primaryBtn:hover {
+				background: linear-gradient(#02acff 0, #006be4 100%)no-repeat padding-box !important;
+				box-shadow: 0 -2px 0 0 #0159b9 inset !important;
+				border: 0 !important;
+				color: #fff !important;
+				outline: 0 !important;
+			}
+
+			.zcwf_lblLeft .zcwf_col_fld input[ type=text],
+			input[ type=password],
+			.zcwf_lblLeft .zcwf_col_fld textarea {
+				width: 60%;
+				border: 1px solid #c0c6cc !important;
+				resize: vertical;
+				border-radius: 2px;
+				float: left;
+			}
+
+			.zcwf_lblLeft .zcwf_col_lab {
+				width: 30%;
+				word-break: break-word;
+				padding: 0px 6px 0px;
+				margin-right: 10px;
+				margin-top: 5px;
+				float: left;
+				min-height: 1px;
+			}
+
+			.zcwf_lblLeft .zcwf_col_fld {
+				float: left;
+				width: 68%;
+				padding: 0px 6px 0px;
+				position: relative;
+				margin-top: 5px;
+			}
+
+			.zcwf_lblLeft .zcwf_privacy {
+				padding: 6px;
+			}
+
+			.zcwf_lblLeft .wfrm_fld_dpNn {
+				display: none;
+			}
+
+			.dIB {
+				display: inline-block;
+			}
+
+			.zcwf_lblLeft .zcwf_col_fld_slt {
+				width: 60%;
+				border: 1px solid #ccc;
+				background: #fff;
+				border-radius: 4px;
+				font-size: 12px;
+				float: left;
+				resize: vertical;
+				padding: 2px 5px;
+			}
+
+			.zcwf_lblLeft .zcwf_row:after,
+			.zcwf_lblLeft .zcwf_col_fld:after {
+				content: '';
+				display: table;
+				clear: both;
+			}
+
+			.zcwf_lblLeft .zcwf_col_help {
+				float: left;
+				margin-left: 7px;
+				font-size: 12px;
+				max-width: 35%;
+				word-break: break-word;
+			}
+
+			.zcwf_lblLeft .zcwf_help_icon {
+				cursor: pointer;
+				width: 16px;
+				height: 16px;
+				display: inline-block;
+				background: #fff;
+				border: 1px solid #c0c6cc;
+				color: #c1c1c1;
+				text-align: center;
+				font-size: 11px;
+				line-height: 16px;
+				font-weight: bold;
+				border-radius: 50%;
+			}
+
+			.zcwf_lblLeft .zcwf_row {
+				margin: 15px 0px;
+			}
+
+			.zcwf_lblLeft .formsubmit {
+				margin-right: 5px;
+				cursor: pointer;
+				color: #313949;
+				font-size: 12px;
+			}
+
+			.zcwf_lblLeft .zcwf_privacy_txt {
+				width: 90%;
+				color: rgb(0, 0, 0);
+				font-size: 12px;
+				font-family: Arial;
+				display: inline-block;
+				vertical-align: top;
+				color: #313949;
+				padding-top: 2px;
+				margin-left: 6px;
+			}
+
+			.zcwf_lblLeft .zcwf_button {
+				font-size: 12px;
+				color: #313949;
+				border: 1px solid #c0c6cc;
+				padding: 3px 9px;
+				border-radius: 4px;
+				cursor: pointer;
+				max-width: 120px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+
+			.zcwf_lblLeft .zcwf_tooltip_over {
+				position: relative;
+			}
+
+			.zcwf_lblLeft .zcwf_tooltip_ctn {
+				position: absolute;
+				background: #dedede;
+				padding: 3px 6px;
+				top: 3px;
+				border-radius: 4px;
+				word-break: break-word;
+				min-width: 100px;
+				max-width: 150px;
+				color: #313949;
+				z-index: 100;
+			}
+
+			.zcwf_lblLeft .zcwf_ckbox {
+				float: left;
+			}
+
+			.zcwf_lblLeft .zcwf_file {
+				width: 55%;
+				box-sizing: border-box;
+				float: left;
+			}
+
+			.cBoth:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+
+			@media all and (max-width: 600px) {
+
+				.zcwf_lblLeft .zcwf_col_lab,
+				.zcwf_lblLeft .zcwf_col_fld {
+					width: auto;
+					float: none !important;
+				}
+
+				.zcwf_lblLeft .zcwf_col_help {
+					width: 40%;
+				}
+			}
+		</style>
+<div class="zcwf_row">
+<div class="zcwf_col_lab" style="font-size:12px; font-family: Arial;"> <label for="First_Name">Nombre <span style="color:red;">*</span> </label> </div>
+<div class="zcwf_col_fld"> <input aria-label="First Name" aria-required="true" aria-valuemax="40" id="First_Name" maxlength="40" name="First Name" type="text"/>
+<div class="zcwf_col_help"> </div>
+</div>
+</div>
+<div class="zcwf_row">
+<div class="zcwf_col_lab" style="font-size:12px; font-family: Arial;"> <label for="Last_Name">Apellidos
+					<span style="color:red;">*</span> </label> </div>
+<div class="zcwf_col_fld"> <input aria-label="Last Name" aria-required="true" aria-valuemax="80" id="Last_Name" maxlength="80" name="Last Name" type="text"/>
+<div class="zcwf_col_help"> </div>
+</div>
+</div>
+<div class="zcwf_row">
+<div class="zcwf_col_lab" style="font-size:12px; font-family: Arial;"> <label for="Email">Correo electrónico
+					<span style="color:red;">*</span> </label> </div>
+<div class="zcwf_col_fld"> <input aria-label="Email" aria-required="true" aria-valuemax="100" autocomplete="false" crmlabel="" ftype="email" id="Email" maxlength="100" name="Email" type="text"/>
+<div class="zcwf_col_help"> </div>
+</div>
+</div>
+<div class="zcwf_row">
+<div class="zcwf_col_lab" style="font-size:12px; font-family: Arial;"> <label for="Phone">Teléfono <span style="color:red;">*</span> </label> </div>
+<div class="zcwf_col_fld"> <input aria-label="Phone" aria-required="true" aria-valuemax="30" id="Phone" maxlength="30" name="Phone" type="text"/>
+<div class="zcwf_col_help"> </div>
+</div>
+</div>
+<div class="zcwf_row">
+<div class="zcwf_col_lab" style="font-size:12px; font-family: Arial;"> <label for="Company">Empresa</label>
+</div>
+<div class="zcwf_col_fld"> <input aria-label="Company" aria-required="false" aria-valuemax="200" id="Company" maxlength="200" name="Company" type="text"/>
+<div class="zcwf_col_help"> </div>
+</div>
+</div>
+<div class="zcwf_row">
+<div class="zcwf_col_lab" style="font-size:12px; font-family: Arial;"> <label for="LEADCF11">Estado de la
+					república <span style="color:red;">*</span> </label> </div>
+<div class="zcwf_col_fld"> <select aria-expanded="false" aria-haspopup="listbox" aria-label="LEADCF11" aria-required="true" class="zcwf_col_fld_slt" id="LEADCF11" name="LEADCF11" onchange="addAriaSelected6479890000000539062()" role="combobox">
+<option value="-None-">-None-</option>
+<option value="Aguascalientes">Aguascalientes</option>
+<option value="Baja California">Baja California</option>
+<option value="Baja California Sur">Baja California Sur</option>
+<option value="Campeche">Campeche</option>
+<option value="Chiapas">Chiapas</option>
+<option value="Chihuahua">Chihuahua</option>
+<option value="Ciudad de México">Ciudad de México</option>
+<option value="Coahuila">Coahuila</option>
+<option value="Colima">Colima</option>
+<option value="Durango">Durango</option>
+<option value="Estado de México">Estado de México</option>
+<option value="Guanajuato">Guanajuato</option>
+<option value="Guerrero">Guerrero</option>
+<option value="Hidalgo">Hidalgo</option>
+<option value="Jalisco">Jalisco</option>
+<option value="Michoacán">Michoacán</option>
+<option value="Morelos">Morelos</option>
+<option value="Nayarit">Nayarit</option>
+<option value="Nuevo León">Nuevo León</option>
+<option value="Oaxaca">Oaxaca</option>
+<option value="Puebla">Puebla</option>
+<option value="Querétaro">Querétaro</option>
+<option value="Quintana Roo">Quintana Roo</option>
+<option value="San Luis Potosí">San Luis Potosí </option>
+<option value="Sinaloa">Sinaloa</option>
+<option value="Sonora">Sonora</option>
+<option value="Tabasco">Tabasco</option>
+<option value="Tamaulipas">Tamaulipas</option>
+<option value="Tlaxcala">Tlaxcala</option>
+<option value="Veracruz">Veracruz</option>
+<option value="Yucatán">Yucatán</option>
+<option value="Zacatecas">Zacatecas</option>
+</select>
+<div class="zcwf_col_help"> </div>
+</div>
+</div>
+<div class="zcwf_row wfrm_fld_dpNn">
+<div class="zcwf_col_lab" style="font-size:12px; font-family: Arial;"> <label for="Lead_Source">Fuente de
+					Posible cliente</label> </div>
+<div class="zcwf_col_fld"> <select aria-expanded="false" aria-haspopup="listbox" aria-label="Lead Source" aria-required="false" class="zcwf_col_fld_slt" id="Lead_Source" name="Lead Source" onchange="addAriaSelected6479890000000539062()" role="combobox">
+<option value="-None-">-None-</option>
+<option value="Campañas de mailing">Campañas de mailing</option>
+<option value="BDD cargada marketing">BDD cargada marketing</option>
+<option value="Base de datos cargada">Base de datos cargada</option>
+<option value="Correo electrónico">Correo electrónico</option>
+<option value="Eventos presenciales">Eventos presenciales</option>
+<option value="Eventos online">Eventos online</option>
+<option value="Google Ads">Google Ads</option>
+<option value="Facebook">Facebook</option>
+<option selected="" value="Formulario web">Formulario web</option>
+<option value="Instagram">Instagram</option>
+<option value="LinkedIn">LinkedIn</option>
+<option value="Llamada telefónica">Llamada telefónica</option>
+<option value="WhatsApp">WhatsApp</option>
+<option value="X (Twitter)">X (Twitter)</option>
+<option value="YouTube">YouTube</option>
+</select>
+<div class="zcwf_col_help"> </div>
+</div>
+</div>
+<div class="zcwf_row">
+<div class="zcwf_col_lab" style="font-size:12px; font-family: Arial;"> <label for="LEADCF1">Consulta <span style="color:red;">*</span> </label> </div>
+<div class="zcwf_col_fld"> <textarea aria-label="LEADCF1" aria-multiline="true" aria-required="true" id="LEADCF1" name="LEADCF1" style="font-family: Arial, sans-serif;"> 			</textarea>
+<div class="zcwf_col_help"> </div>
+</div>
+</div>
+<div class="zcwf_row">
+<div class="zcwf_col_lab"> </div>
+<div class="zcwf_col_fld">
+<div captcha-verified="false" class="g-recaptcha" data-callback="rccallback6479890000000539062" data-sitekey="6Ld_wCwsAAAAAIERcKza1r-RUbtUHJMx9KfgTzZK" data-theme="light" id="recap6479890000000539062"> </div>
+<div id="recapErr6479890000000539062" style="font-size:12px;color:red;visibility:hidden;">Error en
+					validación de Captcha. Si no es un robot, inténtelo de nuevo.</div>
+</div>
+</div> <input name="aG9uZXlwb3Q" style="display: none;" type="hidden" value=""/>
+<div class="zcwf_row">
+<div class="zcwf_col_lab"> </div>
+<div class="zcwf_col_fld"> <input aria-label="Enviar" class="formsubmit zcwf_button" id="formsubmit" role="button" title="Enviar" type="submit" value="Enviar"/> <input aria-label="Restablecer" class="zcwf_button" name="reset" role="button" title="Restablecer" type="reset" value="Restablecer"/> </div>
+</div>
+<script>
+			function addAriaSelected6479890000000539062() { 
+				var optionElem = event.target; 
+				var previousSelectedOption = optionElem.querySelector('[aria-selected=true]'); 
+				if (previousSelectedOption) { 
+					previousSelectedOption.removeAttribute('aria-selected'); 
+				} 
+				optionElem.querySelectorAll('option')[optionElem.selectedIndex].ariaSelected = 'true'; 
+			} 				
+			/* Do not remove this code. */ 				
+			function rccallback6479890000000539062() { 
+				if (document.getElementById('recap6479890000000539062') != undefined) { 
+					document.getElementById('recap6479890000000539062').setAttribute('captcha-verified', true); 
+					} 
+				if (document.getElementById('recapErr6479890000000539062') != undefined && document.getElementById('recapErr6479890000000539062').style.visibility == 'visible') { 
+					document.getElementById('recapErr6479890000000539062').style.visibility = 'hidden'; 
+					} 
+			} 
+			function reCaptchaAlert6479890000000539062() { 
+				var recap = document.getElementById('recap6479890000000539062'); 
+				if (recap != undefined && recap.getAttribute('captcha-verified') == 'false') { 
+					document.getElementById('recapErr6479890000000539062').style.visibility = 'visible'; return false; 
+				} 
+				return true; 
+				} 
+				function validateEmail6479890000000539062() { 
+					var form = document.forms['WebToLeads6479890000000539062']; 
+					var emailFld = form.querySelectorAll('[ftype=email]'); 
+					var i; 
+					for (i = 0; i < emailFld.length; i++) { 
+						var emailVal = emailFld[i].value; 
+						if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) { 
+							var atpos = emailVal.indexOf('@'); 
+							var dotpos = emailVal.lastIndexOf('.'); 
+							if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) { 
+								alert('Introduzca una dirección de correo electrónico válida. '); 
+								emailFld[i].focus(); 
+								return false; 
+							} 
+						} 
+					} 
+					return true; 
+					} 
+					
+					function checkMandatory6479890000000539062() { 
+						var mndFileds = new Array('First Name', 'Last Name', 'Email', 'Phone', 'LEADCF1', 'LEADCF11'); 
+						var fldLangVal = new Array('Nombre', 'Apellidos', 'Correo\x20electr\xF3nico', 'Tel\xE9fono', 'Consulta', 'Estado\x20de\x20la\x20rep\xFAblica'); 
+						for (i = 0; i < mndFileds.length; i++) { 
+							var fieldObj = document.forms['WebToLeads6479890000000539062'][mndFileds[i]]; 
+							if (fieldObj) { 
+								if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) { 
+									if (fieldObj.type == 'file') { 
+										alert('Seleccione un archivo para cargar.'); 
+										fieldObj.focus(); return false; 
+									} 
+									alert(fldLangVal[i] + ' no puede estar vacío.'); 
+									fieldObj.focus(); return false; 
+								} else if (fieldObj.nodeName == 'SELECT') { 
+									if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') { 
+										alert(fldLangVal[i] + ' no puede ser nulo.'); 
+										fieldObj.focus(); return false; 
+									} 
+								} else if (fieldObj.type == 'checkbox') { 
+									if (fieldObj.checked == false) { 
+										alert('Please accept  ' + fldLangVal[i]); 
+										fieldObj.focus(); return false; 
+									} 
+								} try { 
+									if (fieldObj.name == 'Last Name') { 
+										name = fieldObj.value; 
+										} 
+									} catch (e) { } 
+							} 
+						} 
+						if (!validateEmail6479890000000539062()) { 
+							return false; 
+						} 
+						if (!reCaptchaAlert6479890000000539062()) { return false; } var urlparams = new URLSearchParams(window.location.search); if (urlparams.has('service') && (urlparams.get('service') === 'smarturl')) { var webform = document.getElementById('webform6479890000000539062'); var service = urlparams.get('service'); var smarturlfield = document.createElement('input'); smarturlfield.setAttribute('type', 'hidden'); smarturlfield.setAttribute('value', service); smarturlfield.setAttribute('name', 'service'); webform.appendChild(smarturlfield); } document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true); return true; } $(document).ready(function () { $('#webform6479890000000539062').submit(function (e) { var ismandatory = checkMandatory6479890000000539062(); e.preventDefault(); if (ismandatory) { if (typeof _wfa_track != 'undefined' && _wfa_track.wfa_submit) { _wfa_track.wfa_submit(e); } var formData = new FormData(this); $.ajax({ url: 'https://crm.zoho.com/crm/WebToLeadForm', type: 'POST', data: formData, cache: false, contentType: false, processData: false, success: function (data) { var splashinfodom = document.getElementById('wf_splash_info'); splashinfodom.innerText = data.actionvalue; var splashdom = document.getElementById('wf_splash'); document.getElementById('webform6479890000000539062').reset.click(); splashdom.style.display = ''; setTimeout(function () { splashdom.style.display = 'none'; }, 5000); document.querySelector('.crmWebToEntityForm .formsubmit').removeAttribute('disabled'); }, error: function (data) { alert('an error occurred'); } }); } }); }); function tooltipShow6479890000000539062(el) { var tooltip = el.nextElementSibling; var tooltipDisplay = tooltip.style.display; if (tooltipDisplay == 'none') { var allTooltip = document.getElementsByClassName('zcwf_tooltip_over'); for (i = 0; i < allTooltip.length; i++) { allTooltip[i].style.display = 'none'; } tooltip.style.display = 'block'; } else { tooltip.style.display = 'none'; } } 			</script>
+<!-- Do not remove this --- Analytics Tracking code starts -->
+<script id="wf_anal" src="/crm/WebFormAnalyticsServeServlet?rid=fda6dbdfcd803e23adcf05c58ca6e9f4244303fcd06efc9322f28f26f860e547bae2b025cd921d0c312252269747d727gida560d17b072b5f4765052fe62bfe96dd1b57246334a2fc15f68995a498824da3gid41d6746719b63d99025833ca72e50e63060c4b0c08a6a8ddb7a033792e347756gid7d9f291cb97586c1d3db18af0679bd95630155f1b92cca8ab9ae43e284ecadb8&amp;tw=a41da749a46055be3cd0cedb9674c38394d2419cc0d3db5894ab18f90ad9e58b"> </script>
+<!-- Do not remove this --- Analytics Tracking code ends. -->
+</form>
+
