@@ -312,7 +312,7 @@ services:
     tty: true
     ports:
      - "127.0.0.1:64299:64299"
-    image: ${TPOT_REPO}/map:${TPOT_VERSION}
+    image: ghcr.io/ferevr/map:24.04
     pull_policy: ${TPOT_PULL_POLICY}
 
 ## Map Data Service
